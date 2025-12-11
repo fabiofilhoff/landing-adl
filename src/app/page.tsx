@@ -7,19 +7,32 @@ export default function Home() {
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
+        {/* Background Image with transparency - Desktop */}
+        <div className="absolute inset-0 z-0 hidden md:block">
+          <img
+            src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/e39bf982-0756-49b3-a11d-ff1c6764ed5c.png"
+            alt="Background"
+            className="w-full h-full object-cover object-[center_20%] opacity-30"
+          />
+        </div>
+        
+        {/* Background Image with transparency - Mobile */}
+        <div className="absolute inset-0 z-0 block md:hidden">
+          <img
+            src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/66129add-2d01-4ab1-81ea-c9cd8ac05987.png"
+            alt="Background Mobile"
+            className="w-full h-full object-cover object-[center_20%] opacity-40"
+          />
+        </div>
+        
         <div className="absolute inset-0 bg-gradient-to-b from-orange-500/10 via-transparent to-transparent" />
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-orange-500/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-600/20 rounded-full blur-3xl animate-pulse delay-700" />
         </div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-32 sm:pb-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-32 sm:pt-40 sm:pb-40 z-10">
           <div className="text-center space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/20 to-red-600/20 border border-orange-500/30 rounded-full backdrop-blur-sm">
-              <Sparkles className="w-4 h-4 text-orange-400" />
-              <span className="text-sm font-medium text-orange-300">Oportunidade Exclusiva</span>
-            </div>
-            
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-orange-400 via-red-500 to-orange-600 bg-clip-text text-transparent">
                 REPRESENTANTE ADL
