@@ -39,7 +39,7 @@ export default function Home() {
               </span>
             </h1>
             
-            <p className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white max-w-4xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl font-semibold text-white max-w-3xl mx-auto text-justify px-4">
               Ganhe R$ 1.000 por cada carro que você indicar e o ADL fechar negócio
             </p>
             
@@ -49,15 +49,34 @@ export default function Home() {
             </div>
             
             <div className="pt-8">
-              <button className="group relative inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] shadow-[0_4px_20px_rgba(249,115,22,0.4)]">
-                <span className="relative z-10">QUERO SER REPRESENTANTE ADL</span>
-                <ArrowRight className="relative z-10 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
+              {/* Futuristic Button with Angular Design */}
+              <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 text-base sm:text-lg font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 clip-path-hexagon border-2 border-orange-400/50 hover:border-orange-400 shadow-[0_0_30px_rgba(249,115,22,0.6),inset_0_0_20px_rgba(249,115,22,0.2)] hover:shadow-[0_0_50px_rgba(249,115,22,1),0_0_80px_rgba(239,68,68,0.6),inset_0_0_30px_rgba(249,115,22,0.4)]">
+                {/* Corner accents */}
+                <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-orange-400" />
+                <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-orange-400" />
+                <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-orange-400" />
+                <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-orange-400" />
                 
-                {/* Shine effect */}
-                <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+                {/* Animated scan lines */}
+                <span className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(255,255,255,0.03)_50%)] bg-[length:100%_4px] animate-scan" />
                 
-                {/* Subtle texture overlay */}
-                <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
+                {/* Glowing edges */}
+                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                  <span className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-shimmer-horizontal" />
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-red-500 to-transparent animate-shimmer-horizontal-reverse" />
+                </span>
+                
+                {/* Text content */}
+                <span className="relative z-10 flex items-center gap-3">
+                  <span className="drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]">QUERO SER REPRESENTANTE ADL</span>
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]" />
+                </span>
+                
+                {/* Shine effect on hover */}
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+                
+                {/* Pulsing glow background */}
+                <span className="absolute inset-0 bg-gradient-to-r from-orange-600/20 via-red-600/20 to-orange-600/20 animate-pulse-slow" />
               </button>
             </div>
           </div>
@@ -123,15 +142,34 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 rounded-full text-base sm:text-lg font-bold uppercase tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_50px_rgba(249,115,22,0.8)] shadow-[0_6px_30px_rgba(249,115,22,0.5)] border border-orange-400/30">
-              <span className="relative z-10">QUERO ME INSCREVER AGORA</span>
-              <ArrowRight className="relative z-10 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+            {/* Futuristic Button - Second Instance */}
+            <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 text-base sm:text-lg font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 clip-path-hexagon border-2 border-orange-400/50 hover:border-orange-400 shadow-[0_0_30px_rgba(249,115,22,0.6),inset_0_0_20px_rgba(249,115,22,0.2)] hover:shadow-[0_0_50px_rgba(249,115,22,1),0_0_80px_rgba(239,68,68,0.6),inset_0_0_30px_rgba(249,115,22,0.4)]">
+              {/* Corner accents */}
+              <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-orange-400" />
+              <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-orange-400" />
+              <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-orange-400" />
+              <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-orange-400" />
               
-              {/* Animated shine effect */}
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+              {/* Animated scan lines */}
+              <span className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(255,255,255,0.03)_50%)] bg-[length:100%_4px] animate-scan" />
               
-              {/* Glow overlay */}
-              <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_60%)]" />
+              {/* Glowing edges */}
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-shimmer-horizontal" />
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-red-500 to-transparent animate-shimmer-horizontal-reverse" />
+              </span>
+              
+              {/* Text content */}
+              <span className="relative z-10 flex items-center gap-3">
+                <span className="drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]">QUERO ME INSCREVER AGORA</span>
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]" />
+              </span>
+              
+              {/* Shine effect on hover */}
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+              
+              {/* Pulsing glow background */}
+              <span className="absolute inset-0 bg-gradient-to-r from-orange-600/20 via-red-600/20 to-orange-600/20 animate-pulse-slow" />
             </button>
           </div>
         </div>
@@ -264,11 +302,34 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="group relative inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-6 sm:py-3 md:px-7 md:py-3 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(249,115,22,0.7)] shadow-[0_4px_20px_rgba(249,115,22,0.4)]">
-              <span className="relative z-10">QUERO SER REPRESENTANTE ADL</span>
-              <ArrowRight className="relative z-10 w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" />
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
-              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)]" />
+            {/* Futuristic Button - Third Instance */}
+            <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 text-base sm:text-lg font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 clip-path-hexagon border-2 border-orange-400/50 hover:border-orange-400 shadow-[0_0_30px_rgba(249,115,22,0.6),inset_0_0_20px_rgba(249,115,22,0.2)] hover:shadow-[0_0_50px_rgba(249,115,22,1),0_0_80px_rgba(239,68,68,0.6),inset_0_0_30px_rgba(249,115,22,0.4)]">
+              {/* Corner accents */}
+              <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-orange-400" />
+              <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-orange-400" />
+              <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-orange-400" />
+              <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-orange-400" />
+              
+              {/* Animated scan lines */}
+              <span className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(255,255,255,0.03)_50%)] bg-[length:100%_4px] animate-scan" />
+              
+              {/* Glowing edges */}
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-shimmer-horizontal" />
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-red-500 to-transparent animate-shimmer-horizontal-reverse" />
+              </span>
+              
+              {/* Text content */}
+              <span className="relative z-10 flex items-center gap-3">
+                <span className="drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]">QUERO SER REPRESENTANTE ADL</span>
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]" />
+              </span>
+              
+              {/* Shine effect on hover */}
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+              
+              {/* Pulsing glow background */}
+              <span className="absolute inset-0 bg-gradient-to-r from-orange-600/20 via-red-600/20 to-orange-600/20 animate-pulse-slow" />
             </button>
           </div>
         </div>
@@ -323,15 +384,34 @@ export default function Home() {
           <p className="text-xl text-orange-400">👉 Oportunidade real, simples e validada.</p>
 
           <div className="pt-8">
-            <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 rounded-full text-base sm:text-lg font-bold uppercase tracking-wide overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_50px_rgba(249,115,22,0.8)] shadow-[0_6px_30px_rgba(249,115,22,0.5)] border border-orange-400/30">
-              <span className="relative z-10">QUERO SER REPRESENTANTE ADL</span>
-              <ArrowRight className="relative z-10 w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+            {/* Futuristic Button - Final Instance */}
+            <button className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-orange-500 via-red-500 to-red-600 text-base sm:text-lg font-bold uppercase tracking-widest overflow-hidden transition-all duration-300 hover:scale-105 clip-path-hexagon border-2 border-orange-400/50 hover:border-orange-400 shadow-[0_0_30px_rgba(249,115,22,0.6),inset_0_0_20px_rgba(249,115,22,0.2)] hover:shadow-[0_0_50px_rgba(249,115,22,1),0_0_80px_rgba(239,68,68,0.6),inset_0_0_30px_rgba(249,115,22,0.4)]">
+              {/* Corner accents */}
+              <span className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-orange-400" />
+              <span className="absolute top-0 right-0 w-3 h-3 border-t-2 border-r-2 border-orange-400" />
+              <span className="absolute bottom-0 left-0 w-3 h-3 border-b-2 border-l-2 border-orange-400" />
+              <span className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-orange-400" />
               
-              {/* Animated shine effect */}
-              <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/40 to-transparent" />
+              {/* Animated scan lines */}
+              <span className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(255,255,255,0.03)_50%)] bg-[length:100%_4px] animate-scan" />
               
-              {/* Glow overlay */}
-              <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent_60%)]" />
+              {/* Glowing edges */}
+              <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <span className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-orange-400 to-transparent animate-shimmer-horizontal" />
+                <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-red-500 to-transparent animate-shimmer-horizontal-reverse" />
+              </span>
+              
+              {/* Text content */}
+              <span className="relative z-10 flex items-center gap-3">
+                <span className="drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]">QUERO SER REPRESENTANTE ADL</span>
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(249,115,22,0.8)]" />
+              </span>
+              
+              {/* Shine effect on hover */}
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12" />
+              
+              {/* Pulsing glow background */}
+              <span className="absolute inset-0 bg-gradient-to-r from-orange-600/20 via-red-600/20 to-orange-600/20 animate-pulse-slow" />
             </button>
           </div>
         </div>
@@ -348,6 +428,55 @@ export default function Home() {
         @keyframes shimmer {
           0% { background-position: 200% 0; }
           100% { background-position: -200% 0; }
+        }
+        
+        @keyframes scan {
+          0% { transform: translateY(0); }
+          100% { transform: translateY(100%); }
+        }
+        
+        @keyframes shimmer-horizontal {
+          0% { transform: translateX(-100%); }
+          100% { transform: translateX(200%); }
+        }
+        
+        @keyframes shimmer-horizontal-reverse {
+          0% { transform: translateX(200%); }
+          100% { transform: translateX(-100%); }
+        }
+        
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 0.3; }
+          50% { opacity: 0.5; }
+        }
+        
+        .animate-scan {
+          animation: scan 3s linear infinite;
+        }
+        
+        .animate-shimmer-horizontal {
+          animation: shimmer-horizontal 2s linear infinite;
+        }
+        
+        .animate-shimmer-horizontal-reverse {
+          animation: shimmer-horizontal-reverse 2s linear infinite;
+        }
+        
+        .animate-pulse-slow {
+          animation: pulse-slow 3s ease-in-out infinite;
+        }
+        
+        .clip-path-hexagon {
+          clip-path: polygon(
+            0 8px,
+            8px 0,
+            calc(100% - 8px) 0,
+            100% 8px,
+            100% calc(100% - 8px),
+            calc(100% - 8px) 100%,
+            8px 100%,
+            0 calc(100% - 8px)
+          );
         }
       `}</style>
     </div>
